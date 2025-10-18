@@ -1,0 +1,590 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   background: rgba(255, 255, 255, 0.9);
+   backdrop-filter: blur(8px);
+   box-shadow: 0px 2px 5px  rgba(124, 123, 123, 0.3);
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   padding-left: 10px;
+ 
+}
+
+.nav-right {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 10px;
+   
+}
+
+.nav-right h2 {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #ff6600;
+}
+
+
+
+
+.nav-right .nav-ul {
+   list-style: none;
+   margin-right: 10px;
+}
+
+
+.nav-ul li {
+   float: left;
+   display: block;
+   margin: 0 6px auto;
+}
+
+.nav-ul li a {
+   text-decoration: none;
+   display: block;
+   font-size: 16px;
+   color: #3a3636;
+   font-family: "Roboto", sans-serif;
+   font-weight: 200;
+}
+
+nav ul li a.active {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+
+.nav-ul li a:hover {
+   border-left: 5px solid #eeb946;
+   color: #bd5252;
+   transition: color 0.6s ease;
+   
+}
+
+
+
+
+.hero-section {
+   font-family: "Roboto", sans-serif;
+   text-align: center;
+   height: 70vh;
+   background-image: url('bg2.jpg');
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   color: #fff;
+   padding: 0 80px;
+   position: relative;
+   padding: 25% 0%;
+}
+
+.hero-section::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: hsla(0, 4%, 22%, 0.041);
+   z-index: 1;
+}
+
+.hero-section-content {
+   position: relative;
+   z-index: 2;
+   max-width: 500px;
+}
+
+.hero-section h1 {
+   font-size: 2.8rem;
+   color: white;
+   margin-bottom: 20px;
+}
+
+.hero-section p {
+   font-size: 1.2rem;
+   margin-bottom: 20px;
+   line-height: 1.2;
+}
+.hero-section::before {
+   pointer-events: none;
+}
+
+.book-btn {
+   background-color: #ff6600;
+   color: white;
+   padding: 12px 25px;
+   border: none;
+   border-radius: 5px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background 0.3ease;
+}
+
+.book-btn:hover {
+   background-color: #e05500;
+}
+
+.services {
+   background: #f8f9fa;
+   padding: 80px 20px;
+   text-align: center;
+   font-family: "Roboto", sans-serif;
+}
+
+.services .serv {
+   font-size: 1.3rem;
+}
+
+.services h2 {
+   font-size: 2rem;
+   margin-bottom: 10px;
+   color: #222;
+}
+
+.services .subtitle {
+   font-size: 1rem;
+   color: #333;
+   margin-bottom: 50px;
+}
+
+.service-card {
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+   gap: 13px;
+}
+
+.service-card .card {
+   background: white;
+   border-radius: 6px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   padding: 13px;
+   transition: transform 0.3 ease;
+}
+
+.service-card .card:hover {
+   transform: translate(-8px);
+}
+
+.service-card img {
+   width: 100%;
+   display: block;
+   border-radius: 6px;
+   height: 180px;
+   object-fit: cover;
+   margin-bottom: 15px;
+}
+
+.card h3 {
+   color: #333;
+   margin-bottom: 10px;
+}
+
+/*About Styles*/
+
+.about {
+  background: #f8f9fa;
+  padding: 80px 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-image {
+  flex: 1 1 400px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 1 1 400px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-text p {
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.about-text ul li {
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-text .btn {
+  display: inline-block;
+  background: #ff6600;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.about-text .btn:hover {
+  background: #e65c00;
+}
+
+
+/*REVIEWS SECT*/
+
+.reviews {
+  background: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.reviews .subtitle {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.review-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 25px;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+}
+
+.review-text {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.review-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-author h4 {
+  color: #222;
+  margin: 0;
+}
+
+.review-author span {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+.reviews .container h2, h4{
+   font-family: "Roboto, sans-serif";
+   color: #ff6600;
+}
+
+
+/*Contact Styles*/
+
+.contact {
+  background: #f8f9fa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.contact .subtitle {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.contact-form {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff6600;
+}
+
+.about a {
+  text-decoration: none;
+}
+
+.contact-form .btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background: #e65c00;
+}
+
+.map-container {
+  margin-top: 50px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 12px;
+}
+
+
+/*FOOTER STYLES*/
+
+.footer {
+  background: #222;
+  color: #ddd;
+  padding: 60px 20px 20px;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-logo {
+  flex: 1 1 250px;
+}
+
+.footer-logo h3 {
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.footer-links {
+  flex: 1 1 150px;
+}
+
+.footer-links h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff6600;
+}
+
+.footer-social {
+  flex: 1 1 200px;
+}
+
+.footer-social h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-right: 15px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff6600;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  text-decoration: none;
+  bottom: 55px;
+  right: 25px;
+  background: #25D366;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.3);
+}
+
+
+.footer-container {
+   font-family: "Roboto", sans-serif;
+}
+.footer-container a {
+   font-weight: 100;
+   color: #fff;
+   text-decoration: none;
+}
+.footer-container p {
+   color: #fff;
+}
+
+
+.card ul {
+  list-style: none;
+}
+.card ul li {
+  line-height: 2;
+}
+
+.card p {
+  line-height: 2;
+}
+
+.card h3 {
+  text-shadow: 2px 2px 8px hsla(48, 3%, 36%, 0.5);
+}
+
+.card img:hover {
+  opacity: 0.9;
+  transition: opacity 0.9s ease;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.formSec {
+    background-color: hsla(240, 14%, 47%, 0.274);
+    padding: 10px 8px;
+}
+
+.formSec form {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    z-index: 1;
+    font-family: sans-serif;
+}
+
+.formSec #myform textarea, input, button {
+    font-family: sans-serif;
+    display: block;
+    font-size: 14px;
+    color: #666;
+    border: none;
+    
+}
+.formSec #myform input, button,textarea {
+   
+    border: 1px solid hsla(60, 5%, 55%, 0.548);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 4px 6px;
+}
+.formSec #myform input, button, textarea {
+    width: 100%;
+}
+.formSec #myform label {
+    color: grey;
+    margin-left: 4px;
+}
